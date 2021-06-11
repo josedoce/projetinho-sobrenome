@@ -1,0 +1,5 @@
+export enum acao {
+    COMPLETO = 'NOME_DO_MEIO',
+    NOME_SOBRENOME = 'NOME_E_SOBRENOME',
+    USER_COMPLETO = 'NOME_DO_MEIO_UPDATE'
+}
