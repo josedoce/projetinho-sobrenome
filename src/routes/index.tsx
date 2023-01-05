@@ -1,19 +1,21 @@
 import React from 'react'
 import {
 BrowserRouter as Router,
-Switch,
 Route,
+Routes,
 } from 'react-router-dom';
+
 import Admin from '../views/Admin';
 import Home from '../views/Home';
 
-export default function Routes(){
+export default function AppRoutes(){
     return(
         <Router>
-            <Switch>
-                <Route path="/" exact component={Home}/>
-                <Route path="/admin" component={Admin}/>
-            </Switch>
+           <Routes>
+                <Route path="/" element={<Home />}/>
+                <Route path="/admin" element={<Admin />}/>
+           </Routes>
+            
         </Router>
     )
 }
